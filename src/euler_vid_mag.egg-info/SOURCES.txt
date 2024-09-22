@@ -1,0 +1,10 @@
+README.md
+setup.py
+scripts/phase_amplify_app
+scripts/reproduce_results_siggraph13
+src/euler_vid_mag/__init__.py
+src/euler_vid_mag.egg-info/PKG-INFO
+src/euler_vid_mag.egg-info/SOURCES.txt
+src/euler_vid_mag.egg-info/dependency_links.txt
+src/euler_vid_mag.egg-info/requires.txt
+src/euler_vid_mag.egg-info/top_level.txt
