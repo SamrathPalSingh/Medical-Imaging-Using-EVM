@@ -3,6 +3,9 @@
 ### Project Overview
 The Medical Image Enhancement for Change Detection application is designed to assist healthcare professionals in identifying subtle changes in medical images that may not be easily visible to the naked eye. This innovative application processes a series of medical images, such as MRIs, CT scans, and PET scans, taken over a period of time and enhances the differences between them. By highlighting these changes, the application aims to provide doctors with valuable insights that can aid in early diagnosis and treatment planning.
 
+#### How to Use:
+Coming Soon
+
 #### Example Case
 Consider a cancer patient who needs to undergo multiple scans to monitor the growth and changes in a tumor. The patient has scans taken at three different stages: pre-operation (pre-op), post-operation (post-op), and follow-up.
 
