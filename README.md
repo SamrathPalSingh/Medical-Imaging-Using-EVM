@@ -1,28 +1,22 @@
-euler_vid_mag
-=============
+## Project Title: Using Eulerian Video Magnification to enhance Medical Imaging
 
-A python implementation MIT's Eulerian Video Magnification algorithms from both the Siggraph 2012 paper (Hao-Yu Wu, Michael Rubinstein, Eugene Shih, John Guttag, Frédo Durand and William T. Freeman) and also the "new-and-improved" phase-based approach from the 2013 paper (Neal Wadhwa, Michael Rubinstein, Frédo Durand and William T. Freeman). The code presented here is a python implementation of the matlab sources provided by MIT, which are used under license with all credit going to the authors of these algorithms; additionally, the linear implementation leans heavily on https://github.com/LabForComputationalVision/pyrtools for generating Laplacian pyramids.
+### Project Overview
+The Medical Image Enhancement for Change Detection application is designed to assist healthcare professionals in identifying subtle changes in medical images that may not be easily visible to the naked eye. This innovative application processes a series of medical images, such as MRIs, CT scans, and PET scans, taken over a period of time and enhances the differences between them. By highlighting these changes, the application aims to provide doctors with valuable insights that can aid in early diagnosis and treatment planning.
 
-The original papers can be found here (along with more recent developments) http://people.csail.mit.edu/mrub/vidmag/ and they make for an excellent read.
+#### Example Case
+Consider a cancer patient who needs to undergo multiple scans to monitor the growth and changes in a tumor. The patient has scans taken at three different stages: pre-operation (pre-op), post-operation (post-op), and follow-up.
 
-Installation:
-Installing into a virtualenv is recommended. At the command prompt, enter:
-> pip install -e .
+##### Pre-Operation (Pre-Op)
+The patient undergoes an MRI scan to determine the size, location, and extent of the tumor before surgery. The application processes the MRI images to enhance the visibility of the tumor and provide a clear baseline for comparison.
 
-To reproduce the results for the Siggraph 2013 paper:
-1) Download the [source videos][videos] (1.3GB) from the
-  [project web page][phase] into a directory called `sample`.
-2) Type `reproduce_results_siggraph13` to reproduce the results in the paper. 
+##### Post-Operation (Post-Op)
+After the surgery, the patient has another MRI scan to assess the success of the operation and check for any remaining tumor tissue. The application compares the pre-op and post-op images, highlighting any residual tumor tissue or changes in the surrounding area.
 
-[videos]: http://people.csail.mit.edu/nwadhwa/phase-video/video/
-[phase]: http://people.csail.mit.edu/nwadhwa/phase-video/
+###### Follow-Up
+During the follow-up period, the patient undergoes additional MRI scans to monitor for any recurrence or growth of the tumor. Our application analyzes the follow-up images and compares them with the pre-op and post-op images, detecting any new changes or growth that may indicate a recurrence.
 
-There is also a little tkinter UI for demo purposes, which can be launched from the shell like this:
-> phase_amplify_app
+By enhancing the differences between these scans, the application helps doctors detect subtle changes in the tumor that may not be visible to the naked eye. This allows for timely interventions and better treatment planning, ultimately improving patient outcomes.
 
-The gifs below are the MIT file 'car_engine.avi' before & after processing with the phase-based algorithm:
+### Benefits & Conclusion 
+The Medical Image Enhancement for Change Detection application is a powerful tool that leverages advanced image processing and change detection techniques to assist doctors in identifying subtle changes in medical images. By providing enhanced visualizations the application aims to improve the accuracy and efficiency of medical image analysis, ultimately leading to better patient care.
 
-![screenshot](https://raw.githubusercontent.com/aloyisus/euler_vid_mag/master/car_engine.gif)
-![screenshot](https://raw.githubusercontent.com/aloyisus/euler_vid_mag/master/car_engine_pb.gif)
-
-Note that OpenCV 4.x is required (should be compatible with 3.x versions too).
